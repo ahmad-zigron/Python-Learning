@@ -1,0 +1,33 @@
+personDict: {File: "Disctionary", Name: 'Ahmad', Occupation:             "programmer", Gender: true, Age: !!float 23}
+
+hobbiesList: ['It is a List',"reading","writing","swiming"]
+
+languagesList: 
+            - urdu
+            - english
+            - punjabi
+
+ComplexList:
+            - name: "Ahmad"
+              age: 23
+            - year: 1994    
+              date : "27 March"
+              day : "Tuesday"
+
+SingleLine: > 
+                this sign will take all data 
+                as a single line howver i use
+                extra lines in this context
+                lets see
+                what happens
+MultiLines: |                
+            this sign will take all data 
+            as a MULTILINES howver i use
+            extra lines in this context
+            lets see
+            what happens
+val: &abc "This is the Value of abc"
+
+AnchorValue: *abc
+
+#https://codebeautify.org/yaml-to-json-xml-csv     ----Link To Implement Online---
