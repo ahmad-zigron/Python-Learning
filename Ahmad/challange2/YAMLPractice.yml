@@ -1,4 +1,4 @@
-personDict: {File: "Disctionary", Name: 'Ahmad', Occupation:             "programmer", Gender: true, Age: !!float 23}
+personDict: {File: "Disctionary", Name: 'Ahmad', Occupation:             "programmer", Gender: true, Age: 23, cgpa: 3.12}
 
 hobbiesList: ['It is a List',"reading","writing","swiming"]
 
