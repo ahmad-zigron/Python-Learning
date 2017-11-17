@@ -1,3 +1,5 @@
+# Q: Define a class, which have a class parameter and have a same instance parameter.
+
 class ClassAbc:
 	name="This Is a Class Variable" 
 	def __init__(self,  name):
