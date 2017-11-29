@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Bui'
         echo 'Build this'
+        git(url: 'https://github.com/ahmad-zigron/Python-Learning/blob/master/Ahmad/Challange3/Q4.py', branch: 'master')
       }
     }
     stage('Deploy') {
