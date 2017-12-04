@@ -20,8 +20,7 @@ pipeline {
       steps {
         sh '''cd automationscripts/test
         
-./test_dnsperf.sh  
-'''
+./test_dnsperf.sh'''
       }
     }
     stage('pdns-prod') {
