@@ -19,18 +19,8 @@ pipeline {
     stage('regression-test') {
       steps {
         sh '''cd automationscripts/test
-
-  
+        
 ./test_dnsperf.sh  
-
-
-
-
-
-
-
-
-
 '''
       }
     }
