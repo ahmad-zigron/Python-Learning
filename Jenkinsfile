@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('sonar') {
       steps {
-        git(url: 'https://ahmad-zigron@bitbucket.org/gaditek_dpi/automationscripts.git', branch: 'master')
+        git(url: 'https://ahmad-zigron@bitbucket.org/gaditek_dpi/pdns-recursor-4.0.5.git', branch: 'master')
       }
     }
     stage('build') {
