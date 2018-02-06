@@ -1,13 +1,16 @@
-pipeline {
-    agent any
+pipeline{
+  agent any
     parameters {
-        string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+    string(name: 'host', 
+    defaultValue: 'develop',
+    description: 'Parameters for BlueOcean Pipeline')
+  }
+  stages{
+    stage ('Example'){
+      steps{
+        echo'Hellow World of parameters'
+        echo "Trying: ${params.host}"
+      }
     }
-    stages {
-        stage('Example') {
-            steps {
-                echo "Hello ${params.PERSON}"
-            }
-        }
-    }
+  }
 }
