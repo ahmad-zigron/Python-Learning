@@ -9,11 +9,8 @@ pipeline {
   }
   stages {
     stage('PDNS_sonar') {
-        environment {
-          SONAR_SCANNER_OPTS = "-Xmx1g"
-        }
       steps {
-        sh "/opt/sonar-scanner/bin/sonar-scanner -D sonar-project.properties"
+        echo '------------------- Sonar ------------------------ '
       }
     }
     stage('PDNS_build') {
