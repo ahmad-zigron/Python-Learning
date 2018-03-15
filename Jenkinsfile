@@ -1,12 +1,4 @@
 pipeline {
-  agent any
-  parameters {
-    string(name: 'TAG',
-    description: 'Tag  for production server')
-    string(name: 'HOSTS',
-    defaultValue: 'hostvirtual2',
-    description: 'Hosts Parameters for production server')
-  }
   stages {
     stage('PDNS_sonar') {
       steps {
